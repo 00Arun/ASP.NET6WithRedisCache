@@ -6,20 +6,20 @@ namespace ASP.NET6WithRedisCache.Interface
 {
     public sealed class RepositoryHelper: IRepositoryHelper
     {
-        private readonly RedisCache cache;
-        private readonly RepositoryOptions options;
+        private readonly RedisCache _cache;
+        private readonly RepositoryOptions _options;
         public RepositoryHelper(IOptions<RepositoryOptions> options, RedisCache cache)
         {          
-            this.cache = cache;
-            this.options = options.Value;
+            _cache = cache;
+            _options = options.Value;
         }
-        public IDatabase GetCacheDatabase(RedisDatabaseTarget target) => this.cache.Connection.GetDatabase(this.GetDatabaseId(target));
+        public IDatabase GetCacheDatabase(RedisDatabaseTarget target) => _cache.Connection.GetDatabase(this.GetDatabaseId(target));
         private int GetDatabaseId(RedisDatabaseTarget target)
         {
             return target switch
             {
-                RedisDatabaseTarget.Transient => this.options.RedisTransientDatabaseId,
-                RedisDatabaseTarget.Persistent => this.options.RedisPersistentDatabaseId,
+                RedisDatabaseTarget.Transient => _options.RedisTransientDatabaseId,
+                RedisDatabaseTarget.Persistent => _options.RedisPersistentDatabaseId,
                 _ => throw new NotSupportedException(),
             };
         }
