@@ -6,9 +6,8 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "ASP.Net6WithRedisCache/1.0.0": {
+      "ASP.NET6WithRedisCache/1.0.0": {
         "dependencies": {
-          "HtmlAgilityPack": "1.11.42",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.3",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.3",
           "Microsoft.Extensions.Caching.StackExchangeRedis": "6.0.3",
@@ -16,15 +15,7 @@
           "Swashbuckle.AspNetCore": "6.3.0"
         },
         "runtime": {
-          "ASP.Net6WithRedisCache.dll": {}
-        }
-      },
-      "HtmlAgilityPack/1.11.42": {
-        "runtime": {
-          "lib/netstandard2.0/HtmlAgilityPack.dll": {
-            "assemblyVersion": "1.11.42.0",
-            "fileVersion": "1.11.42.0"
-          }
+          "ASP.NET6WithRedisCache.dll": {}
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -560,17 +551,10 @@
     }
   },
   "libraries": {
-    "ASP.Net6WithRedisCache/1.0.0": {
+    "ASP.NET6WithRedisCache/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "HtmlAgilityPack/1.11.42": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-LDc1bEfF14EY2DZzak4xvzWvbpNXK3vi1u0KQbBpLUN4+cx/VrvXhgCAMSJhSU5vz0oMfW9JZIR20vj/PkDHPA==",
-      "path": "htmlagilitypack/1.11.42",
-      "hashPath": "htmlagilitypack.1.11.42.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",
