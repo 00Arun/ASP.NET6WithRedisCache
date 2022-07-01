@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "qpTcyVmJVHgQmtU2/Si4txazZX0bHxy0ztpysKAiADA=",
+  "Source": "ASP.Net6WithRedisCache",
+  "BasePath": "_content/ASP.Net6WithRedisCache",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
